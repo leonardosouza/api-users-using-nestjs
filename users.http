@@ -1,0 +1,16 @@
+### Get All Users
+curl -X GET http://localhost:3000/
+
+### Get All Users
+curl -X GET http://localhost:3000/users/
+
+### Create a New User
+curl -X POST http://localhost:3000/users \
+  -H "Content-Type: application/json" \
+  -d '{"name": "Leonardo", "email": "leonardo.souza@aluno.impacta.com.br"}'
+
+### Get an specific user
+curl -X GET http://localhost:3000/users/6
+
+### Delete an specific user
+curl -X DELETE http://localhost:3000/users/1
